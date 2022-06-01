@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/recordCustom"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_record"
+        android:layout_gravity="center|top">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/win"
+            android:textSize="32sp"
+            android:textColor="#efe5fd"
+            android:gravity="center|top"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dialogSetText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog"
+            android:textSize="18sp"
+            android:textColor="#efe5fd"
+            android:gravity="center|bottom"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/move"
+            android:textSize="18sp"
+            android:textColor="#efe5fd"
+            android:gravity="center|top"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/again"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#efe5fd"
+            android:gravity="center"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="0.8">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/homeBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="@string/home"
+                android:textSize="20sp"
+                android:layout_gravity="start"
+                android:textColor="#efe5fd"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/playBtn"
+                android:background="@drawable/shape_no"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/playBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="@string/play"
+                android:textSize="20sp"
+                android:layout_gravity="end"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/homeBtn"
+                android:textColor="#efe5fd"
+                android:background="@drawable/shape_yes"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efe5fd"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backResults"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:padding="6dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back_button_for_about" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/highScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:shadowColor="#1b1c4d"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="@string/highScore"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="42sp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/left"
+            android:layout_width="70dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="#6200EA"
+            app:layout_constraintRight_toLeftOf="@id/highScore"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/right"
+            android:layout_width="70dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="#6200EA"
+            app:layout_constraintLeft_toRightOf="@id/highScore"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="horizontal" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto_mono"
+            android:gravity="center"
+            android:shadowColor="#80000000"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="10"
+            android:textColor="#1b1c4d"
+            android:textSize="32sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/moves1"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto_mono"
+            android:gravity="center"
+            android:shadowColor="#80000000"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="10"
+            android:textColor="#1b1c4d"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@id/third"
+            app:layout_constraintEnd_toEndOf="@id/first"
+            app:layout_constraintStart_toStartOf="@id/first"
+            app:layout_constraintTop_toBottomOf="@id/first"
+            android:text="@string/moves2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_roboto_mono"
+            android:gravity="center"
+            android:shadowColor="#80000000"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:shadowRadius="10"
+            android:textColor="#1b1c4d"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/second"
+            app:layout_constraintStart_toStartOf="@id/second"
+            app:layout_constraintTop_toBottomOf="@id/second"
+            android:text="@string/moves3"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_clear"/>
+    </FrameLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

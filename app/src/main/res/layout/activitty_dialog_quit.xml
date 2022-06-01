@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/recordCustom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:background="@drawable/shape_record"
+        android:layout_gravity="center|top">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:text="@string/quit"
+            android:textSize="24sp"
+            android:textColor="#efe5fd"
+            android:gravity="center|top"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/noBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="@string/no"
+                android:textSize="20sp"
+                android:layout_gravity="start"
+                android:textColor="#efe5fd"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/yesBtn"
+                android:background="@drawable/shape_no"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/yesBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:text="@string/yes"
+                android:textSize="20sp"
+                android:layout_gravity="end"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/noBtn"
+                android:textColor="#efe5fd"
+                android:background="@drawable/shape_yes"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

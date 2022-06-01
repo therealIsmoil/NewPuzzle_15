@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Puzzle 15</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+    <string name="eleven">11</string>
+    <string name="twelve">12</string>
+    <string name="thirteen">13</string>
+    <string name="fourteen">14</string>
+    <string name="fifteen">15</string>
+    <string name="sixteen">16</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="moves">Moves 0</string>
+    <string name="startGame">START GAME</string>
+    <string name="results">RESULTS</string>
+    <string name="about">ABOUT</string>
+    <string name="exit">EXIT</string>
+    <string name="bottomBar">15teen Puzzle Game Created\nby Khusanov Ismoilbek</string>
+    <string name="instructions">About</string>
+    <string name="aboutApp">This app was created by junior developer Khusanov Ismoilbek while studying at GITA Academy. This app was given to me a homework assignment in Lesson 3.
+        \n\n                    Instruction\n
+        The 15-puzzle  is a sliding puzzle that consists of a frame of numbered square tiles in random order with one tile missing.
+               The puzzle also exists in other sizes, particularly the smaller 8 - puzzle.
+                If the size is 3x3 tiles, the puzzle is called the 8 - puzzle or 9 - puzzle and if 4x4 tiles, the puzzle is called the 15 - puzzle or 16 - puzzle named,
+        respectively, for the number of spaces. The object of the puzzle is to place the tiles in order by making sliding moves that in order
+        by making sliding moves that use the empty space.
+
+        \n\ncontact: khusanov.ismoilbek@gmail.com
+    </string>
+
+    <string name="highScore">High Score</string>
+    <string name="moves1">1. Moves ~</string>
+    <string name="moves2">2. Moves ~</string>
+    <string name="moves3">3. Moves ~</string>
+    <string name="clear">CLEAR</string>
+    <string name="win">Congratulations!!!</string>
+    <string name="dialog">You have solved puzzle for</string>
+    <string name="move"> moves</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="quit">Are you sure want to quit?</string>
+    <string name="play">Play</string>
+    <string name="home">Home</string>
+    <string name="again">One more time?</string>
+</resources>
