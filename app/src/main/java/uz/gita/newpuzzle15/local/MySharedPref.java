@@ -70,4 +70,14 @@ public class MySharedPref {
     private void saveThird(int count){
         sharedPreferences.edit().putInt("THIRD", count).apply();
     }
+
+
+    /**
+     * bnsdf
+     * aljfnajskd
+     * aojnbdfkjsaf
+     * lkdnfkjalsd
+     * dfgsd
+     *
+     * */
 }

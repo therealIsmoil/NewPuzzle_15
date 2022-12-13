@@ -28,4 +28,14 @@ public class AboutActivity extends AppCompatActivity {
             onBackPressed();
         });
     }
+
+
+    /**
+     * bnsdf
+     * aljfnajskd
+     * aojnbdfkjsaf
+     * lkdnfkjalsd
+     * dfgsd
+     *
+     * */
 }
