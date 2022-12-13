@@ -58,4 +58,13 @@ public class ResultsActivity extends AppCompatActivity {
             mySharedPref.remove();
         });
     }
+
+    /**
+     * bnsdf
+     * aljfnajskd
+     * aojnbdfkjsaf
+     * lkdnfkjalsd
+     * dfgsd
+     *
+    * */
 }
